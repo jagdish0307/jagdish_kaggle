@@ -48,3 +48,36 @@ Removes numeric values and mixtures of alphanumeric content.
 
 The cleaning process is applied to train_df and test_df datasets, creating a new column text_cleaned that stores the cleaned version of the text column.
 
+=========================================================
+
+
+
+============================================================
+**Text Preprocessing and Visualization**
+
+**Lemmatize the Text**
+Apply lemmatization to standardize words to their root forms.
+
+**Convert Text to Lowercase**
+Transform all text to lowercase for uniformity.
+
+**Remove Repeated Characters in Elongated Words**
+Use a regular expression to reduce exaggerated repeated characters.
+
+**Remove Mentions**
+Strip user mentions (e.g., @username) using regular expressions.
+
+**Remove Stopwords**
+Exclude common stopwords to retain only meaningful words.
+
+**Remove Punctuation**
+Remove punctuation to simplify tokenization and text analysis.
+
+**Generate Word Clouds**
+Combine text for each category (raw and preprocessed).
+Create and display word clouds for both disaster and non-disaster tweets, before and after preprocessing.
+
+
+
+
+
