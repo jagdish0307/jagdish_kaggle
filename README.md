@@ -3,7 +3,7 @@
 **Project Overview**
 This project focuses on analyzing and classifying tweets into two categories:
 
-**Disaster-related tweets**: Tweets indicating a natural disaster or emergency situation.
+**Disaster-related tweets**: Tweets indicating a natural disaster or emergency.
 **Non-disaster-related tweets**: Tweets unrelated to disasters.
 
 ** Load Dataset and Import Necessary Libraries **
@@ -20,6 +20,7 @@ Used the WordCloud library to visualize the most frequent words in disaster and 
 Created side-by-side visualizations for easy comparison.
 
 
+
 **Text Cleaning Script**
 
 We are removing unwanted elements such as URLs, HTML tags, character references, non-printable characters, and numeric values. This preprocessing is essential for ensuring the text data is clean and ready for analysis or modeling.
@@ -29,19 +30,19 @@ We are removing unwanted elements such as URLs, HTML tags, character references,
 **cleaning steps:**
 
 **Remove URLs**
-Using regular expressions, remove all URLs (e.g., https://example.com) from the text.
+Using regular expressions, remove all URLs from the text.
 
-**Remove HTML Tags**
-Strips HTML tags (e.g., <div>, <br>) from the text.
+**Remove HTML Tags** 
+Strips HTML tags from the text.
 
 **Remove Character References**
-Removes HTML character references (e.g., &lt;, &amp;, &nbsp;) from the text.
+Removes HTML character references from the text.
 
 **Remove Non-Printable Characters**
-Removes characters not in the printable ASCII range (e.g., control characters).
+Removes characters not in the printable ASCII range.
 
 **Remove Numeric Values**
-Removes numeric values and mixtures of alphanumeric content (e.g., 1234, abc123).
+Removes numeric values and mixtures of alphanumeric content.
 
 **Dataframe Operations:**
 
