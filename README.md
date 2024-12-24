@@ -144,26 +144,28 @@ Model Training and Evaluation:
  Performs hyperparameter tuning for KNN, RandomForest and evaluates its performance.
  Uses metrics such as accuracy, precision, recall, F1-score, and a confusion matrix for model evaluation.
 
-
+### Summary Results:
 # Summary Results:
 
-                             Accuracy  Precision    Recall  F1 Score
-MultinomialNB               0.567301   0.578062  0.567301  0.569456
-SVC                         0.570584   0.325567  0.570584  0.414580
-LogisticRegression          0.672357   0.669011  0.672357  0.667771
-DecisionTreeClassifier      0.638214   0.638562  0.638214  0.638381
-KNeighborsClassifier        0.695338   0.694595  0.695338  0.694907
-RandomForestClassifier      0.710440   0.710385  0.710440  0.703399
-GradientBoostingClassifier  0.717006   0.715241  0.717006  0.713362
+| Model                      | Accuracy  | Precision | Recall   | F1 Score |
+|----------------------------|-----------|-----------|----------|----------|
+| MultinomialNB              | 0.567301  | 0.578062  | 0.567301 | 0.569456 |
+| SVC                        | 0.570584  | 0.325567  | 0.570584 | 0.414580 |
+| LogisticRegression         | 0.672357  | 0.669011  | 0.672357 | 0.667771 |
+| DecisionTreeClassifier     | 0.638214  | 0.638562  | 0.638214 | 0.638381 |
+| KNeighborsClassifier       | 0.695338  | 0.694595  | 0.695338 | 0.694907 |
+| RandomForestClassifier     | 0.710440  | 0.710385  | 0.710440 | 0.703399 |
+| GradientBoostingClassifier | 0.717006  | 0.715241  | 0.717006 | 0.713362 |
 
+### After Hyperparameter Tunning:
 
-# After Hyperparameter Tunning:
+| Model                      | Accuracy | Precision | Recall | F1 Score |
+|----------------------------|----------|-----------|--------|----------|
+| KNeighborsClassifier       | 0.722    | 0.72      | 0.72   | 0.72     |
+| RandomForestClassifier     | 0.726    | 0.73      | 0.73   | 0.72     |
+| GradientBoostingClassifier | 0.733    | 0.73      | 0.73   | 0.73     |
+| XGBClassifier              | 0.741    | 0.74      | 0.74   | 0.74     |
 
-                             Accuracy  Precision   Recall  F1 Score
-KNeighborsClassifier         0.722       0.72         0.72     0.72
-RandomForestClassifier       0.726       0.73         0.73     0.72
-GradientBoostingClassifier   0.733       0.73         0.73     0.73
-XGBClassifier                0.741       0.74         0.74     0.74 
 
 # Models Selection:
    - Selects a best model for predict unseen data
