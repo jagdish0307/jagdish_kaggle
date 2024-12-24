@@ -80,6 +80,33 @@ Remove punctuation to simplify tokenization and text analysis.
 Combine text for each category (raw and preprocessed).
 Create and display word clouds for both disaster and non-disaster tweets, before and after preprocessing.
 
+============================================================================================================================================================================
+**Feature Analysis and Visualization (Histograms)**:
+   - Ensures that specific features exist in the DataFrame (`train_df`).
+   - Compares the distribution of these features for disaster-related (`target = 1`) and non-disaster-related (`target = 0`) tweets using histograms.
+   - Creates a figure with multiple subplots and labels for better visualization.
+
+2. **Donut Plot Function**:
+   - Defines a reusable function `donutplot` to create a donut-shaped pie chart with a central hole, useful for visualizing proportions.
+
+3. **Barplot for Keyword Analysis**:
+   - Groups tweets by keywords and their disaster classification.
+   - Calculates the counts of tweets for each keyword in both disaster and non-disaster categories.
+   - Uses a bar plot to show the top keywords based on their overall frequency in the dataset.
+
+4. **Word Counter Function**:
+   - Defines a helper function `word_counter` to count the occurrences of a specific word in the text column.
+
+5. **Handling Missing Values**:
+   - Identifies the number of missing and duplicated entries in `train_df`.
+   - Removes the `location` column from the DataFrame and drops rows with missing values.
+
+6. **Visualization of Keyword Importance**:
+   - Creates a sorted DataFrame of keyword counts for both disaster and non-disaster tweets.
+   - Visualizes the top 200 keywords with their counts using a horizontal bar plot.
+
+
+
 
 
 
