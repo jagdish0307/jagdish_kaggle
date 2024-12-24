@@ -1,4 +1,4 @@
-# Disaster_Tweet
+##  Disaster_Tweet
 
 **Project Overview**
    This project focuses on analyzing and classifying tweets into two categories:
@@ -110,24 +110,24 @@
 - This project implements a machine learning pipeline for text classification. The pipeline includes preprocessing, feature extraction using Word2Vec, data normalization, and training and evaluation of multiple classifiers.
 
 
-# Text Preprocessing:
+**Text Preprocessing:**
 
 - Tokenizes the cleaned text (text_cleaned) column into individual words.
 Creates Word2Vec embeddings to represent text as numerical vectors.
 Word2Vec Model:
 
-# Trains a Word2Vec model using tokenized text.
+**Trains a Word2Vec model using tokenized text**.
 - Generates sentence embeddings by averaging the Word2Vec vectors of individual words.
 Data Preparation:
 
-# Splits the dataset into training and test sets.
+**Splits the dataset into training and test sets**.
 - Normalizes numerical features such as sent_count, word_count, char_count, etc., using StandardScaler.
 Encodes categorical features, such as keyword, into numerical form.
 
 - Combines Word2Vec embeddings with other normalized features for training machine learning models.
 Model Training and Evaluation:
 
-# Implements a variety of machine learning classifiers:
+** Implements a variety of machine learning classifiers**:
  1. Naive Bayes (Multinomial and Gaussian)
  2 .Logistic Regression
  3. Support Vector Classifier (SVC)
@@ -137,15 +137,15 @@ Model Training and Evaluation:
  7. Gradient Boosting Classifier
  8. XGBoost Classifier
 
-# Comparison of Models:
+**Comparison of Models**:
 
  Provides a summary of results for each model, including accuracy, precision, recall, and F1-score.
  Displays a classification report and confusion matrix for detailed insights.
  Performs hyperparameter tuning for KNN, RandomForest and evaluates its performance.
  Uses metrics such as accuracy, precision, recall, F1-score, and a confusion matrix for model evaluation.
 
-### Summary Results:
-# Summary Results:
+**Summary Results**:
+
 
 | Model                      | Accuracy  | Precision | Recall   | F1 Score |
 |----------------------------|-----------|-----------|----------|----------|
@@ -157,7 +157,7 @@ Model Training and Evaluation:
 | RandomForestClassifier     | 0.710440  | 0.710385  | 0.710440 | 0.703399 |
 | GradientBoostingClassifier | 0.717006  | 0.715241  | 0.717006 | 0.713362 |
 
-### After Hyperparameter Tunning:
+**After Hyperparameter Tunning**:
 
 | Model                      | Accuracy | Precision | Recall | F1 Score |
 |----------------------------|----------|-----------|--------|----------|
@@ -166,16 +166,15 @@ Model Training and Evaluation:
 | GradientBoostingClassifier | 0.733    | 0.73      | 0.73   | 0.73     |
 | XGBClassifier              | 0.741    | 0.74      | 0.74   | 0.74     |
 
-
-# Models Selection:
+**Models Selection**:
    - Selects a best model for predict unseen data
    - Tree Based Models gives best accuracy for this dataset
    - Here we selects XGBClassifier to detect a particular Tweet is disaster or non disaster
 
-# Check Model Performance On Unseen Data(test_df):
+** Check Model Performance On Unseen Data(test_df)**:
    - We have aleredy unseen data which is test_df using above RandomForestClassifier or XGBClassifier
-   - Predicts test_df and create a submission and chek on kaggale it  gives -
-     # Accuracy 72 - 74
+   - Predicts test_df and create a submission and chek on kaggale it  gives **Accuracy between 72-74**
+     
    
 
 
