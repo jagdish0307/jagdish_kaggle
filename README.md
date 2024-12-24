@@ -55,27 +55,35 @@ The cleaning process is applied to train_df and test_df datasets, creating a new
 ============================================================
 
 
-**Text Preprocessing and Visualization**
+**Text Preprocessing and Visualization****:**
 
-**Lemmatize the Text**
+
+**Lemmatize the Text****:** 
+
 Apply lemmatization to standardize words to their root forms.
 
-**Convert Text to Lowercase**
+**Convert Text to Lowercase****:**
+
 Transform all text to lowercase for uniformity.
 
-**Remove Repeated Characters in Elongated Words**
+**Remove Repeated Characters in Elongated Words****:**
+
 Use a regular expression to reduce exaggerated repeated characters.
 
-**Remove Mentions**
+**Remove Mentions****:**
+
 Strip user mentions (e.g., @username) using regular expressions.
 
-**Remove Stopwords**
+**Remove Stopwords****:**
+
 Exclude common stopwords to retain only meaningful words.
 
-**Remove Punctuation**
+**Remove Punctuation****:**
+
 Remove punctuation to simplify tokenization and text analysis.
 
-**Generate Word Clouds**
+**Generate Word Clouds****:**
+
 Combine text for each category (raw and preprocessed).
 Create and display word clouds for both disaster and non-disaster tweets, before and after preprocessing.
 
