@@ -205,7 +205,7 @@ Model Training and Evaluation:
 
 | Model                      | Accuracy | Precision | Recall | F1 Score |
 |----------------------------|----------|-----------|--------|----------|
-| **Logistic Regression **   |  0.7682  | 0.77      | 0.77   | 0.77     |
+| **Logistic Regression**   |  0.7682  | 0.77      | 0.77   | 0.77     |
 
 - Here **Logistic Regression** gives best accuracy which is on training data **0.7958** and on testing **F1 Score is 0.77**
 
