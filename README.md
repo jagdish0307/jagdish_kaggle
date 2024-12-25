@@ -48,11 +48,54 @@
 
    The cleaning process is applied to train_df and test_df datasets, creating a new column text_cleaned that stores the cleaned version of the text column.
 
-=========================================================
 
 
+**Text Feature Engineering** 
+The goal is to derive useful features that can be used in predictive models for various natural language processing (NLP) tasks. 
+This script includes different techniques to extract text-based features, such as sentence count, word count, character count, and more.
 
-============================================================
+**Dependencies**
+     .nltk
+     .spacy
+     .pandas
+
+**Features Extracted**
+      **Steps**
+     **Number of Sentences (sent_count)**
+         Tokenizes each text into sentences and counts them.
+                [nltk.tokenize.sent_tokenize]
+                
+   **Number of Words (word_count) **
+        Tokenizes each text into words and counts them.
+        
+  ** Number of Characters (excluding whitespaces) (char_count)**
+        Counts the number of characters excluding spaces.
+        
+  **Number of Hashtags (hash_count)**
+       Identifies the number of hashtags (#).
+       
+  **Number of Mentions (ment_count)**
+       Identifies the number of mentions (@)
+       
+  **Number of Uppercase Words (all_caps_count)**
+      Identifies words with consecutive uppercase letters.
+      
+  **Average Word Length (avg_word_len)**
+      Computes the average length of the words in each text.
+      
+ **Number of Proper Nouns using NLTK (propn_count_nltk)**
+       Uses NLTK's POS tagging to count proper nouns
+       
+  **Number of Proper Nouns using spaCy (propn_count)**
+       Uses spaCy to count proper nouns
+      
+  **Number of Non-Proper Nouns (noun_count)**
+       Uses spaCy to count non-proper nouns.
+      
+  ** Percentage of Punctuation (punc_per)**
+      Computes the percentage of punctuation marks in the text.
+          
+
 
 
 **Text Preprocessing and Visualization**:
