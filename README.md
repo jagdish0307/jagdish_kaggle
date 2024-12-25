@@ -190,33 +190,41 @@ Model Training and Evaluation:
 **Summary Results**:
 
 
-| Model                      | Accuracy  | Precision | Recall   | F1 Score |
-|----------------------------|-----------|-----------|----------|----------|
-| MultinomialNB              | 0.567301  | 0.578062  | 0.567301 | 0.569456 |
-| SVC                        | 0.570584  | 0.325567  | 0.570584 | 0.414580 |
-| LogisticRegression         | 0.672357  | 0.669011  | 0.672357 | 0.667771 |
-| DecisionTreeClassifier     | 0.638214  | 0.638562  | 0.638214 | 0.638381 |
-| KNeighborsClassifier       | 0.695338  | 0.694595  | 0.695338 | 0.694907 |
-| RandomForestClassifier     | 0.710440  | 0.710385  | 0.710440 | 0.703399 |
-| GradientBoostingClassifier | 0.717006  | 0.715241  | 0.717006 | 0.713362 |
+| Model                                                       | Accuracy | Precision | Recall  | F1 Score |
+|-------------------------------------------------------------|----------|-----------|---------|----------|
+| **Bernoulli Naive Bayes (BernoulliNB)**                     | 0.7236   | 0.7256    | 0.7236  | 0.7243   |
+| **Support Vector Classifier (SVC)**                         | 0.7643   | 0.7660    | 0.7643  | 0.7598   |
+| **Logistic Regression (LogisticRegression)**                | 0.7669   | 0.7662    | 0.7669  | 0.7664   |
+| **Decision Tree Classifier (DecisionTreeClassifier)**       | 0.6448   | 0.6455    | 0.6448  | 0.6451   |
+| **K-Nearest Neighbors (KNeighborsClassifier)**              | 0.6894   | 0.6874    | 0.6894  | 0.6877   |
+| **Random Forest Classifier (RandomForestClassifier)**       | 0.7203   | 0.7230    | 0.7203  | 0.7117   |
+| **Gradient Boosting Classifier(GradientBoostingClassifier)**| 0.7223   | 0.7212    | 0.7223  | 0.7177   |
+| **XGBClassifier**                                           |  0.7570  | 0.76      |  0.76   | 0.76     |
 
 **After Hyperparameter Tunning**:
 
 | Model                      | Accuracy | Precision | Recall | F1 Score |
 |----------------------------|----------|-----------|--------|----------|
-| KNeighborsClassifier       | 0.722    | 0.72      | 0.72   | 0.72     |
-| RandomForestClassifier     | 0.726    | 0.73      | 0.73   | 0.72     |
-| GradientBoostingClassifier | 0.733    | 0.73      | 0.73   | 0.73     |
-| XGBClassifier              | 0.741    | 0.74      | 0.74   | 0.74     |
+| **Logistic Regression **   |  0.7682  | 0.77      | 0.77   | 0.77     |
+
+- Here **Logistic Regression** gives best accuracy which is on training data **0.7958** and on testing **F1 Score is 0.77**
+
+ **Interpretation of Metrics**:
+
+- **Accuracy**: The proportion of correct predictions made by the model out of all predictions.
+- **Precision**: The proportion of positive predictions that were correct (i.e., the model’s ability to avoid false positives).
+- **Recall**: The proportion of actual positives that were correctly predicted by the model (i.e., the model’s ability to avoid false negatives).
+- **F1 Score**: The harmonic mean of precision and recall, providing a balance between the two.
+- **for this perticular problem recall is most important** 
 
 **Models Selection**:
    - Selects a best model for predict unseen data
-   - Tree Based Models gives best accuracy for this dataset
-   - Here we selects XGBClassifier to detect a particular Tweet is disaster or non disaster
+   - **Logistic Regression and SVC** Models gives best accuracy for this dataset
+   - Here we selects **Logistic Regression**  to detect a particular Tweet is disaster or non disaster
 
-** Check Model Performance On Unseen Data(test_df)**:
-   - We have aleredy unseen data which is test_df using above RandomForestClassifier or XGBClassifier
-   - Predicts test_df and create a submission and chek on kaggale it  gives **Accuracy between 72-74**
+**Check Model Performance On Unseen Data(test_df)**:
+   - We have aleredy unseen data which is test_df using above **Logistic Regression**
+   - Predicts test_df and create a submission and chek on kaggale it  gives **Accuracy 0.7560**
      
    
 
