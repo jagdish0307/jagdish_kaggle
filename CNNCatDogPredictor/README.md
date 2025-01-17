@@ -86,3 +86,7 @@ The predict_and_display function will process the input image, predict its class
 ### Conclusion
 This project demonstrates the effectiveness of CNNs and transfer learning in binary image classification tasks. While the custom CNN offers simplicity, transfer learning with MobileNetV2 provides higher accuracy and robustness. Both approaches are valuable depending on the specific requirements of the task.
 
+
+## 📓 Colab Notebook  
+  - Explore the implementation in this project using the (https://colab.research.google.com/drive/1hpFYrFwRZInhgZ5cN3GHXnSX7Vnxc9_n?usp=sharing).  
+
