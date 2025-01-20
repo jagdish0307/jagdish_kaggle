@@ -1,4 +1,4 @@
-**Jagdish Dapke**
+**Name: Jagdish Dapke**
 # AIML Batch Class Project 
 
 1. **NLP (Disaster or Non-Disaster Predictor on Twitter)**
