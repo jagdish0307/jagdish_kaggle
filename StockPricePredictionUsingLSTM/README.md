@@ -45,3 +45,8 @@ OPEN, CLOSE, HIGH, LOW: Stock prices at different times of the day.
     - MAE (Mean Absolute Error): 0.49
     - R² Score for Training Data: 0.98
     - R² Score for Test Data: 0.71
+
+
+
+📓 Colab Notebook
+Explore the implementation in this project using the(https://colab.research.google.com/drive/1KYRa60rLJ2zT_w9FfSCwIyWk0DNeOv3F#scrollTo=8_Mx8vqaVbGs)).
