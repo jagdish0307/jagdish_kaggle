@@ -50,3 +50,5 @@ OPEN, CLOSE, HIGH, LOW: Stock prices at different times of the day.
 
 📓 Colab Notebook
 Explore the implementation in this project using the[(https://colab.research.google.com/drive/1A3sKONzKgz0o_xZFCRECpicKNpQTLraQ?usp=sharing]).
+
+- Dataset link: https://www.kaggle.com/datasets/minatverma/nse-stocks-data	
